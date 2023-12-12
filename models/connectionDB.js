@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const connectDB = async () => {
     try {
-        await mongoose.connect("mongodb://localhost:27017/nodechatgroup");
+        await mongoose.connect(process.env.DATBASE_URI);
         console.log("Connection Established With Database");
     } catch (error) {
         console.log(`Error While Connecting With Database ${error}`)
