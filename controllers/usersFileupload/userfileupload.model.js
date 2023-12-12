@@ -6,10 +6,10 @@ const fileUploaderSchema = new mongoose.Schema({
         type:String,
         required:true,
     },
-    file:[{
-        type:String,
-        default:null,
-    }]
+    // file:[{
+    //     type:String,
+    //     default:null,
+    // }]
 },{timestamps:true})
 
 

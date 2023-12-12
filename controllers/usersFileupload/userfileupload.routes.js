@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const {CreateChatFile} = require('./userfileupload.controller');
+const {CreateChatFile, sendMessages} = require('./userfileupload.controller');
 const multer = require('multer');
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
